@@ -8,7 +8,7 @@ export default [
     {
         path: '/admin/dashboard',
         component: dashboardModule,
-        meta: { auth: true },
+        // meta: { auth: true },
         name: 'admin.dashboard'
     },
 
@@ -17,7 +17,7 @@ export default [
     {
         path: '/admin/page-example',
         component: pageExampleModule,
-        meta: { auth: true },
+        // meta: { auth: true },
         name: 'admin.page.example'
     }
 ]

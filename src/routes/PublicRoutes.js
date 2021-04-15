@@ -7,7 +7,7 @@ export default [
     // Default route
     {
         path: '/',
-        redirect: '/login'
+        redirect: '/admin/dashboard'
     },
 
     // Error 404

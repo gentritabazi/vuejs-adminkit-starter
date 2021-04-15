@@ -1,0 +1,12 @@
+.form-social .item {
+    cursor: pointer;
+}
+
+.form-social .item i {
+    min-width: 40px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    border-radius: 50%;
+    background: black;
+}

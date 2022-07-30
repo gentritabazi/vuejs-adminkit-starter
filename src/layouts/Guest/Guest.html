@@ -1,17 +1,15 @@
 <section class="h-100">
-    <div class="container h-100">
-        <div class="row justify-content-md-center h-100">
-            <div class="card-wrapper">
-                <div class="brand">
-                    <img src="@/assets/images/google-logo.png" alt="logo">
-                </div>
-                <div class="card fat">
-                    <slot/>
-                </div>
-                <div class="footer">
-                    Copyright &copy; 2021 {{ appName }}.
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container h-100">
+		<div class="row justify-content-md-center h-100">
+			<div class="card-wrapper">
+				<div class="brand">
+					<img src="/google-logo.png" alt="logo" />
+				</div>
+				<div class="card fat">
+					<slot />
+				</div>
+				<div class="footer">Copyright &copy; {{ currentYear }} {{ appName }}.</div>
+			</div>
+		</div>
+	</div>
 </section>

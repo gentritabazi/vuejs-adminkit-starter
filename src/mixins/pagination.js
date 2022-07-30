@@ -1,7 +1,7 @@
 export default {
-    methods: {
-        paginationPerPage() {
-            return 10
-        }
-    }
-}
+	methods: {
+		paginationPerPage() {
+			return 10;
+		},
+	},
+};

@@ -1,36 +1,36 @@
 .app-pagination .vmq-pagination {
-    font-size: .875rem;
-    justify-content: center;
-    display: flex;
-    padding-left: 0;
-    list-style: none;
+	font-size: 0.875rem;
+	justify-content: center;
+	display: flex;
+	padding-left: 0;
+	list-style: none;
 }
 
 .app-pagination .vmq-pagination .vmq-pagination-link,
 .app-pagination .vmq-pagination .vmq-pagination-next,
 .app-pagination .vmq-pagination .vmq-pagination-prev {
-    color: #5d6778;
-    padding: .25rem .5rem;
-    position: relative;
-    display: block;
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	color: #5d6778;
+	padding: 0.25rem 0.5rem;
+	position: relative;
+	display: block;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #dee2e6;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.app-pagination .vmq-pagination .vmq-pagination-button .vmq-pagination-current-page { 
-    background: #747f94;
-    color: #fff;
-    border-color: #747f94;
-    pointer-events: none;
+.app-pagination .vmq-pagination .vmq-pagination-button .vmq-pagination-current-page {
+	background: #747f94;
+	color: #fff;
+	border-color: #747f94;
+	pointer-events: none;
 }
 
 .app-pagination .vmq-pagination .vmq-pagination-next:disabled,
 .app-pagination .vmq-pagination .vmq-pagination-prev:disabled {
-    color: #9fa7b5;
+	color: #9fa7b5;
 }
 
 .app-pagination .vmq-pagination .vmq-pagination-button .unclickable {
-    pointer-events: none;
+	pointer-events: none;
 }

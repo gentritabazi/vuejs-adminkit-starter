@@ -1,34 +1,32 @@
-import guestLayout from '@/layouts/Guest'
-import httpAxios from '@/utils/http-axios.js'
+import guestLayout from '@/layouts/Guest';
+import Api from '@/utils/api.js';
+import AppConfig from '@/config/app.js';
 
 export default {
-    name: 'Login',
-    data() {
-        return {
-            email: null,
-            password: null
-        }
-    },
-    components: {
-        guestLayout
-    },
-    methods: {
-        login() {
-            const self = this
+	name: 'Login',
 
-            httpAxios({
-                url: self.$backendUrl + '/login',
-                method: 'POST',
-                data: { email: self.email, password: self.password }
-            }).then(async response => {
-                if (response.data.role != 'admin') {
-                    return self.notifyWarning('Sorry you entered invalid credentials!')
-                }
+	data() {
+		return {
+			email: null,
+			password: null,
+		};
+	},
 
-                self.$store.commit('LOGGED_USER', response.data)
+	components: {
+		guestLayout,
+	},
 
-                self.$router.go({ name: 'admin.dashboard' })
-            })
-        }
-    }
-}
+	methods: {
+		async login() {
+			const response = await Api({
+				url: AppConfig.BACKEND_URL + '/login',
+				method: 'POST',
+				data: { email: self.email, password: self.password },
+			});
+
+			this.$store.commit('LOGGED_USER', response.data);
+
+			this.$router.go({ name: 'admin.dashboard' });
+		},
+	},
+};

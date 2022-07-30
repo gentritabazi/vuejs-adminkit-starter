@@ -1,4 +1,4 @@
-import pagination from '@maqe-vue/pagination'
+import pagination from '@maqe-vue/pagination';
 
 export default {
 	name: 'Pagination',
@@ -6,29 +6,29 @@ export default {
 		totalRows: Number,
 		perPage: {
 			type: Number,
-			default: 10
-		}
+			default: 10,
+		},
 	},
 	data() {
 		return {
-			currentPage: 1
-		}
+			currentPage: 1,
+		};
 	},
 	computed: {
-		totalPages: function() {
-			console.log(this.perPage)
-			return Math.ceil(this.totalRows / this.perPage)
-		}
+		totalPages: function () {
+			console.log(this.perPage);
+			return Math.ceil(this.totalRows / this.perPage);
+		},
 	},
 	components: {
-		pagination
+		pagination,
 	},
 	methods: {
 		handlePageChange(pageNum) {
 			if (!isNaN(pageNum)) {
-				this.$emit('pageChange', pageNum)
-				this.currentPage = pageNum
+				this.$emit('pageChange', pageNum);
+				this.currentPage = pageNum;
 			}
-		}
-	}
-}
+		},
+	},
+};

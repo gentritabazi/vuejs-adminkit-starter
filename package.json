@@ -1,5 +1,5 @@
 {
-  "name": "rrituemeso-dashboard",
+  "name": "admitkit-dashboard",
   "version": "1.0.0",
   "private": true,
   "author": {
@@ -10,18 +10,17 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "production": "vue-cli-service serve --mode production"
+    "code:format": "prettier --write \"src/**/*.{ts,css,js,html}\"",
+    "code:check": "prettier --check \"src/**/*.{ts,css,js,html}\""
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@maqe-vue/pagination": "^1.0.2",
     "@popperjs/core": "^2.9.2",
     "axios": "^0.21.1",
-    "bootstrap": "^5.0.0-beta3",
+    "bootstrap": "^5.2.0",
     "chart.js": "^2.9.4",
     "core-js": "^3.10.1",
-    "moment": "^2.29.1",
     "vue": "^2.6.11",
     "vue-chartjs": "^3.5.1",
     "vue-notification": "^1.3.20",
@@ -35,6 +34,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^2.7.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

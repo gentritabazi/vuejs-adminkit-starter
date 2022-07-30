@@ -1,3 +1,3 @@
 export default {
-    name: 'Modal-Component'
-}
+	name: 'Modal-Component',
+};

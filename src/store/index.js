@@ -8,13 +8,13 @@ import getters from './getters';
 import mutations from './mutations';
 
 const state = {
-	displayLoader: false,
-	loggedUser: localStorage.getItem('loggedUser') || null,
+  displayLoader: false,
+  loggedUser: localStorage.getItem('loggedUser') || null,
 };
 
 export default new Vuex.Store({
-	state,
-	actions,
-	getters,
-	mutations,
+  state,
+  actions,
+  getters,
+  mutations,
 });

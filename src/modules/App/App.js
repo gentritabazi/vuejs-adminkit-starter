@@ -2,15 +2,15 @@ import loaderComponent from '@/components/Loader';
 import { mapGetters } from 'vuex';
 
 export default {
-	name: 'App',
+  name: 'App',
 
-	components: {
-		loaderComponent,
-	},
+  components: {
+    loaderComponent,
+  },
 
-	computed: {
-		...mapGetters({
-			displayLoader: 'getDisplayLoader',
-		}),
-	},
+  computed: {
+    ...mapGetters({
+      displayLoader: 'getDisplayLoader',
+    }),
+  },
 };

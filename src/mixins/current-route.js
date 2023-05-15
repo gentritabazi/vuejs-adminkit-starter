@@ -1,7 +1,7 @@
 export default {
-	methods: {
-		currentRoute: function () {
-			return this.$router.currentRoute;
-		},
-	},
+  methods: {
+    currentRoute: function () {
+      return this.$router.currentRoute;
+    },
+  },
 };

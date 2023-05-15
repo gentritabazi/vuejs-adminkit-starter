@@ -4,10 +4,10 @@ import SidebarComponent from '@/components/Sidebar';
 import NavbarComponent from '@/components/Navbar';
 
 export default {
-	name: 'Admin',
+  name: 'Admin',
 
-	components: {
-		SidebarComponent,
-		NavbarComponent,
-	},
+  components: {
+    SidebarComponent,
+    NavbarComponent,
+  },
 };

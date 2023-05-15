@@ -12,7 +12,7 @@ Vue.mixin(notifyMixin);
 Vue.mixin(pagination);
 
 new Vue({
-	render: (h) => h(App),
-	router,
-	store,
+  render: (h) => h(App),
+  router,
+  store,
 }).$mount('#app');

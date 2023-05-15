@@ -1,9 +1,9 @@
 import adminLayout from '@/layouts/Admin';
 
 export default {
-	name: 'Dashboard',
+  name: 'Dashboard',
 
-	components: {
-		adminLayout,
-	},
+  components: {
+    adminLayout,
+  },
 };

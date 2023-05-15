@@ -4,24 +4,24 @@ const loginModule = () => import('@/modules/Login');
 
 // Export
 export default [
-	// Default route
-	{
-		path: '/',
-		redirect: '/admin/dashboard',
-	},
+  // Default route
+  {
+    path: '/',
+    redirect: '/admin/dashboard',
+  },
 
-	// Error 404
-	{
-		path: '*',
-		component: error404Module,
-		name: 'error-404',
-	},
+  // Error 404
+  {
+    path: '*',
+    component: error404Module,
+    name: 'error-404',
+  },
 
-	// Login
-	{
-		path: '/login',
-		component: loginModule,
-		name: 'login',
-		meta: { guest: true },
-	},
+  // Login
+  {
+    path: '/login',
+    component: loginModule,
+    name: 'login',
+    meta: { guest: true },
+  },
 ];

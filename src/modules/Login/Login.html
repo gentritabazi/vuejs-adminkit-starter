@@ -1,26 +1,26 @@
 <guest-layout>
-	<div class="card-body">
-		<h4 class="card-title">Login</h4>
-		<form method="POST" class="my-login-validation" novalidate="">
-			<div class="form-group mb-4">
-				<label for="email">E-Mail Address</label>
-				<input v-model="email" id="email" type="email" class="form-control" required autofocus />
-			</div>
+  <div class="card-body">
+    <h4 class="card-title">Login</h4>
+    <form method="POST" class="my-login-validation" novalidate="">
+      <div class="form-group mb-4">
+        <label for="email">E-Mail Address</label>
+        <input v-model="email" id="email" type="email" class="form-control" required autofocus />
+      </div>
 
-			<div class="form-group mb-4">
-				<label for="password"
-					>Password
-					<a href="#" class="float-right">Forgot Password?</a>
-				</label>
+      <div class="form-group mb-4">
+        <label for="password"
+          >Password
+          <a href="#" class="float-right">Forgot Password?</a>
+        </label>
 
-				<input v-model="password" id="password" type="password" class="form-control" required />
-			</div>
+        <input v-model="password" id="password" type="password" class="form-control" required />
+      </div>
 
-			<div class="form-group m-0">
-				<button type="submit" class="btn btn-primary btn-block w-100" @click.prevent="login">Login</button>
-			</div>
+      <div class="form-group m-0">
+        <button type="submit" class="btn btn-primary btn-block w-100" @click.prevent="login">Login</button>
+      </div>
 
-			<div class="mt-4 text-center d-none">Don't have an account? <a href="#">Create One</a>.</div>
-		</form>
-	</div>
+      <div class="mt-4 text-center d-none">Don't have an account? <a href="#">Create One</a>.</div>
+    </form>
+  </div>
 </guest-layout>

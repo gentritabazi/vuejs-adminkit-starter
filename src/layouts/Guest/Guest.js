@@ -4,12 +4,12 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import AppConfig from '@/config/app';
 
 export default {
-	name: 'Guest',
+  name: 'Guest',
 
-	data() {
-		return {
-			appName: AppConfig.NAME,
-			currentYear: new Date().getFullYear(),
-		};
-	},
+  data() {
+    return {
+      appName: AppConfig.NAME,
+      currentYear: new Date().getFullYear(),
+    };
+  },
 };

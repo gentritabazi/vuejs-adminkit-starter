@@ -11,7 +11,7 @@ This project is a starter that helps you start your next project on VueJS, as it
 - Base pages (like Dashboard/404 etc).
 - Pre-configured with code quality tools: Prettier, Jest, etc.
 - Axios Interceptors.
-- [Admin Kit](https://github.com/creativetimofficial/soft-ui-dashboard) included.
+- [Admin Kit](https://github.com/adminkit/adminkit) included.
 
 ![preview.png](preview.png)
 
